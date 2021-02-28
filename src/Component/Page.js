@@ -13,6 +13,7 @@ export default class Page extends Component {
     }
   }
 
+  // to keep track of our state
   changeHandler = e => {
     this.setState({
       [e.target.name] : e.target.value
@@ -25,6 +26,7 @@ export default class Page extends Component {
   }
 
   render() {
+    // add values to the value attribute of the inputs
     const { name, age, salary, hobby } = this.state;    
     return (
       <Container fluid className="container">
