@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import React, { Component } from 'react'
+// import { Button, Form, Container, Header, Grid, Segment } from 'semantic-ui-react'
 import './App.css';
+import  Page from "./Component/Page";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const style = {
+  h1: {
+    marginTop: '3em',
+  },
+  h2: {
+    margin: '4em 0em 2em',
+  },
+  h3: {
+    marginTop: '2em',
+    padding: '2em 0em',
+  },
+  last: {
+    marginBottom: '300px',
+  },
 }
 
+const App = ()=> {
+    return (
+      <Page/>
+    )
+}
 export default App;
