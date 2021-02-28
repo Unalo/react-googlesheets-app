@@ -1,8 +1,5 @@
-// import React from "react";
 import React, { Component } from 'react'
-
 import { Button, Form, Container, Header, Grid, Segment } from 'semantic-ui-react'
-
 
 export default class Page extends Component {
   constructor(props) {
