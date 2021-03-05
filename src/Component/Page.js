@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button, Form, Container, Header, Grid, Segment } from 'semantic-ui-react'
+import { Button, Form, Container, Header, Grid, Message } from 'semantic-ui-react'
 import axios from "axios";
 
 export default class Page extends Component {
@@ -44,7 +44,7 @@ export default class Page extends Component {
     return (
       <Container fluid className="container">
         <Header as='h2'>React Google Sheets!</Header>
-        <Form className="form" onSubmit={this.submitHandler}>
+        <Form success className="form" onSubmit={this.submitHandler}>
           <Form.Field>
             <label>Name</label>
             <input placeholder='Enter your name' type="text" name = "name" value = {name} onChange={this.changeHandler}/>
@@ -61,7 +61,11 @@ export default class Page extends Component {
             <label>Hobby</label>
             <input placeholder='Enter your hobby' type="text" name = "hobby" value = {hobby} onChange={this.changeHandler}/>
           </Form.Field>
-          
+          <Message 
+          success
+          header = "form Completed"
+          content = "Data captureed"
+          />
           <Button color="blue" type='submit'>Submit</Button>
         </Form>
       </Container>
