@@ -17,8 +17,6 @@ export default class Page extends Component {
       submittedMessage: false
     }
 
-    // this.readyToSubmit = this.readyToSubmit.bind(this);
-
   }
 
   // keep track of our state

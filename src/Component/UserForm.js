@@ -26,5 +26,4 @@ const UserForm = (props) => {
     </Form>
   )
 }
-// disabled={!props.readyToSubmit()}
 export default UserForm;
